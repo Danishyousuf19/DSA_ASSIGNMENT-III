@@ -26,9 +26,11 @@ public class menu_driven_recursionQ_7 {
 	}
 		power(n,m-1,p*n);
 		}
-	public static void  gcd(int n,int m) {
-		
-		System.out.println("GCD : ");
+	public static int  gcd(int n,int m) {
+		if(m==0) {
+			return n;
+		}
+		else return gcd(m,n%m);
 	}
 	public static void  binary(int n,String b) {
 		
@@ -38,10 +40,12 @@ public class menu_driven_recursionQ_7 {
 		}
 		binary(n/2,n%2+b);
 	}
-	public static void  product(int n ,int m) {
-		if(n==0)
-		System.out.println("Product");
-		
+	public static void  product(int n ,int m,int p) {
+		if(m==0) {
+		System.out.println("Product : "+p);
+		return;
+		}
+		product(n,m-1,p+n);
 	}
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
@@ -77,7 +81,7 @@ public class menu_driven_recursionQ_7 {
 				int N3=sc.nextInt();
 				System.out.println("Enter another number");
 				int N3b=sc.nextInt();
-			    gcd(N3,N3b);
+			    System.out.println("GCD : "+gcd(N3,N3b));
 			    break;
 			}
 			case 4: {
@@ -95,7 +99,7 @@ public class menu_driven_recursionQ_7 {
 				int N5=sc.nextInt();
 				System.out.println("Enter another number");
 				int N5b=sc.nextInt();
-				product(N5,N5b);
+				product(N5,N5b,0);
 				System.out.println("Chose any  option");
 				break;
 			}
