@@ -103,18 +103,14 @@ public class menu_driven_recursionQ_7 {
 				System.out.println("Chose any  option");
 				break;
 			}
-			case 0:{
-				System.out.println("Exiting from code");
-				break;
-			}
+			
 		    default:{
 		    	System.out.println("Invalid choice! Please try again.");
 			break;
 		    }
 			 }
-			if(choice ==0) {
-				break;
-			}
+			
 		}
+		System.out.println("Exiting from code");
 	}
 }
