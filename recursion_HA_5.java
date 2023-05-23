@@ -8,21 +8,25 @@
 //storage.”)
 
 public class recursion_HA_5 {
+	static int count =0;
 static void TOH(int n,String source,String helper,String destination) {
+	
 	if(n==1) {
 		System.out.println("transfer disk "+n+" from "+source+" to "+destination);
+		count++;
 		return;
 	}
 	//transfer n-1 from source to helper
 	TOH(n-1,source,destination,helper);
+	count++;
 	System.out.println("transfer disk "+n+" from "+source+" to "+destination);
 	//transfer n-1 back to destination
     TOH(n-1,helper,source,destination);
-    
+   
 }
 	public static void main(String[] args) {
-		 TOH(4, "source","helper","destination");
-
+		 TOH(3, "source","helper","destination");
+System.out.println("Count = "+count);
 	}
 
 }
