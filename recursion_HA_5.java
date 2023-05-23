@@ -21,8 +21,24 @@ static void TOH(int n,String source,String helper,String destination) {
     
 }
 	public static void main(String[] args) {
-		 TOH(3, "source","helper","destination");
+		 TOH(4, "source","helper","destination");
 
 	}
 
 }
+//
+//transfer disk 1 from source to helper
+//transfer disk 2 from source to destination
+//transfer disk 1 from helper to destination
+//transfer disk 3 from source to helper
+//transfer disk 1 from destination to source
+//transfer disk 2 from destination to helper
+//transfer disk 1 from source to helper
+//transfer disk 4 from source to destination
+//transfer disk 1 from helper to destination
+//transfer disk 2 from helper to source
+//transfer disk 1 from destination to source
+//transfer disk 3 from helper to destination
+//transfer disk 1 from source to helper
+//transfer disk 2 from source to destination
+//transfer disk 1 from helper to destination
