@@ -36,8 +36,8 @@ public class genericsQ_6 {
 		a.setitem("world");
 		a.getitem();
 		b.getitem();
-//		hello
-//		hello
+//		world
+//		world
 		box <Integer> IntegerBox =new box<>(22);
 		box <Integer >t=IntegerBox;
 		box<Integer >u=IntegerBox;
@@ -51,8 +51,8 @@ public class genericsQ_6 {
         box <Object> m=ObjectBox;
         box <Object> n=ObjectBox;
         m.setitem("you");
-        n.setitem(n.item);
-       // m.setitem(a.item);
+        n.setitem(m.item);
+       // m.setting(n.item);
         m.getitem();
         n.getitem();
 //        you
