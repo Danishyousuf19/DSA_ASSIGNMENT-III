@@ -24,9 +24,11 @@ static void TOH(int n,String source,String helper,String destination) {
     TOH(n-1,helper,source,destination);
    
 }
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
+	
 		 TOH(3, "source","helper","destination");
-System.out.println("Count = "+count);
+System.out.println("Nnumber of Steps = "+count);
 	}
 
 }
@@ -46,3 +48,4 @@ System.out.println("Count = "+count);
 //transfer disk 1 from source to helper
 //transfer disk 2 from source to destination
 //transfer disk 1 from helper to destination
+//Number of steps= 15

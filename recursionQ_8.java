@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class recursionQ_8 {
 public static void reverse(int a,int rev) {
 	if(a==0) {
-		System.out.println("Reverse   : "+rev);
+		System.out.println("Reverse : "+rev);
 		return;
 	}
 	;

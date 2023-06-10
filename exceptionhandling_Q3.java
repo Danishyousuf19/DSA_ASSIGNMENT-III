@@ -6,6 +6,7 @@ import java.util.Scanner;
 class MarksOutOfBoundException extends Exception{
 	public String toString () {
 		return "MarksOutOfBoundException: Mark can't be greater than 100";
+		//super.toString()+
 	}
 }
 class StudentS{
@@ -32,12 +33,17 @@ public class exceptionhandling_Q3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		StudentS s=new StudentS();
+		s.getdata();
 		try {
-			s.getdata();
+			
 			s.display();
 		}
 		catch (MarksOutOfBoundException e) {
 			System.out.println(e);
+			//e.printStackTrace();
+		}
+		finally {
+			System.out.println("The code is completed");
 		}
 
 	}

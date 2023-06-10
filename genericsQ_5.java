@@ -17,7 +17,9 @@ public class genericsQ_5 {
 		return i;
 		
 	}
+	
 	public static void main(String[] args) {
+		
 		Scanner sc=new Scanner(System.in);
 		Integer arr[]=new Integer[5];
 		System.out.println("Enter elements of array");
@@ -27,6 +29,7 @@ for(int i=0;i<5;i++) {
 		System.out.println("Enter the element to search");
 		int x=sc.nextInt();
 	System.out.println( "Number of times "+x+" present in the array is "+count(arr, x))	;
+	
 	}
 
 }
